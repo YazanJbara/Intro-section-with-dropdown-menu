@@ -16,6 +16,12 @@
   <body>
     <header>
       <nav class="navigation_bar">
+        <div class="mobile_menu">
+          <img class="logo" src="images/logo.svg" alt="Company Logo" />
+          <img class="menu" src="images/icon-menu.svg" alt="Menu Icon" />
+          <img class="close_menu" src="images/icon-close-menu.svg" alt="Close Menu Icon" style="display: none;" />
+        </div>
+        
         <ul class="nav_links">
           <img class="logo" src="images/logo.svg" alt="Company Logo" />
 
@@ -30,6 +36,7 @@
                 style="display: none"
               />
             </a>
+            
             <ul class="dropdown __left">
               <li>
                 <img src="images/icon-todo.svg" alt="Todo Icon" />
@@ -78,13 +85,10 @@
 
     <main class="container">
       <section class="intro">
-        <h1 class="intro_title">
-          Make <br />
-          remote work
-        </h1>
+        <h1 class="intro_title">Make <br> remote work</h1>
         <p class="intro_text">
-          Get your team in sync, no matter your location. <br />
-          Streamline processes, create team rituals, and <br />
+          Get your team in sync, no matter your location. 
+          Streamline processes, create team rituals, and 
           watch productivity soar.
         </p>
         <button class="intro_btn">Learn more</button>
@@ -95,10 +99,76 @@
           <img src="companies/client-maker.svg" alt="" />
         </div>
       </section>
-      <section class="section_img">
-        <img class="illustration" src="images/image-hero-desktop.png" />
-      </section>
+
+      <picture class="section_img">
+        <source
+          media="(min-width: 801px)"
+          srcset="images/image-hero-desktop.png"
+        />
+        <img class="illustration" src="images/image-hero-mobile.png" />
+      </picture>
     </main>
+
+    <ul class="nav_links __mobile">
+      <div class="mobile_header">
+        <img class="close_menu" src="images/icon-close-menu.svg" alt="Close Menu Icon" />
+      </div>
+      <li>
+        <a href="#" class="arrow">
+          Features
+          <img src="images/icon-arrow-down.svg" alt="" class="arrow_down" />
+          <img
+            src="images/icon-arrow-up.svg"
+            alt=""
+            class="arrow_up"
+            style="display: none"
+          />
+        </a>
+        
+        <ul class="dropdown __left">
+          <li>
+            <img src="images/icon-todo.svg" alt="Todo Icon" />
+            <a href="#">Todo List</a>
+          </li>
+          <li>
+            <img src="images/icon-calendar.svg" alt="Calendar Icon" />
+            <a href="#">Calendar</a>
+          </li>
+          <li>
+            <img src="images/icon-reminders.svg" alt="Reminders Icon" />
+            <a href="#">Reminders</a>
+          </li>
+          <li>
+            <img src="images/icon-planning.svg" alt="Planning Icon" />
+            <a href="#">Planning</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="arrow"
+          >Company
+          <img src="images/icon-arrow-down.svg" alt="" class="arrow_down" />
+          <img
+            src="images/icon-arrow-up.svg"
+            alt=""
+            class="arrow_up"
+            style="display: none"
+          />
+        </a>
+        <ul class="dropdown">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+      <div class="end">
+        <li><a href="#">Login</a></li>
+        <li class="button"><a href="#">Register</a></li>
+      </div>
+    </ul>
+    <div class="overlay"></div>
   </body>
 </html>
 
@@ -116,3 +186,4 @@
   create team rituals, and watch productivity soar.
 
   Learn more -->
+
